@@ -3,28 +3,23 @@ import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
 
-interface Props {
+interface Props extends React.SVGProps<SVGSVGElement> {
   className?: string
+  size?: string
 }
 
-const Logo: React.FC<Props> = ({ className }) => {
+const Logo: React.FC<Props> = ({ className, size = 'size-30 sm:size-20', ...props }) => {
   return (
-    <Link
-      href="/"
-      className={clsx(
-        'flex items-center justify-center shrink-0',
-        className
-      )}
-    >
-      <Image
-        src="/images/Logo.png"
-        alt="MatcheriBalu News"
-        width={350}
-        height={100}
-        priority
-        className="h-auto w-auto object-contain"
-      />
-    </Link>
+    <Link href="/" className={clsx('inline-block shrink-0 text-primary-800 dark:text-primary-900', className, size)}>
+  <Image
+    src="/images/Logo.png"
+    alt="Logo"
+    width={700}
+    height={300}
+    priority
+    className="h-auto w-auto"
+  />
+</Link>
   )
 }
 

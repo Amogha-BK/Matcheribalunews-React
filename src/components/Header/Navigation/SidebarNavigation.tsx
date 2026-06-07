@@ -115,17 +115,16 @@ const SidebarNavigation: React.FC<Props> = ({ data }) => {
       <Divider className="mb-6" />
 
       {/* FOR OUR DEMO */}
-      <div className="flex items-center gap-2 px-4 py-3 border-b">
-  <button className="text-sm font-medium hover:text-primary-600">
-    English
-  </button>
-
-  <span>|</span>
-
-  <button className="text-sm font-medium hover:text-primary-600">
-    ಕನ್ನಡ
-  </button>
-</div>
+      <select
+  className="border rounded-md px-2 py-1 text-sm"
+  onChange={(e) => {
+    const lang = e.target.value
+    console.log(lang)
+  }}
+>
+  <option value="en">English</option>
+  <option value="kn">ಕನ್ನಡ</option>
+</select>
     </div>
   )
 }
