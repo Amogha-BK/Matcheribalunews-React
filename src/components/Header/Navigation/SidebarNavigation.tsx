@@ -26,6 +26,7 @@ const SidebarNavigation: React.FC<Props> = ({ data }) => {
     itemClass = 'ps-3 text-neutral-900 dark:text-neutral-200 font-medium'
   ) => {
     return (
+      
       <ul className="nav-mobile-sub-menu ps-6 pb-1 text-base">
         {item.children?.map((childMenu, index) => (
           <Disclosure key={index} as="li">
@@ -114,17 +115,17 @@ const SidebarNavigation: React.FC<Props> = ({ data }) => {
       <Divider className="mb-6" />
 
       {/* FOR OUR DEMO */}
-      <div className="flex items-center justify-between gap-x-2.5 py-6">
-        <ButtonPrimary
-          href="https://themeforest.net/item/ncmaz-blog-news-magazine-nextjs-template/44412092"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Buy this template
-        </ButtonPrimary>
+      <div className="flex items-center gap-2 px-4 py-3 border-b">
+  <button className="text-sm font-medium hover:text-primary-600">
+    English
+  </button>
 
-        <SwitchDarkMode />
-      </div>
+  <span>|</span>
+
+  <button className="text-sm font-medium hover:text-primary-600">
+    ಕನ್ನಡ
+  </button>
+</div>
     </div>
   )
 }
