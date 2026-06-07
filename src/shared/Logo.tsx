@@ -8,7 +8,7 @@ interface Props extends React.SVGProps<SVGSVGElement> {
   size?: string
 }
 
-const Logo: React.FC<Props> = ({ className, size = 'size-20 sm:size-18', ...props }) => {
+const Logo: React.FC<Props> = ({ className, size = 'size-25 sm:size-22', ...props }) => {
   return (
     <Link href="/" className={clsx('inline-block shrink-0 text-primary-800 dark:text-primary-900', className, size)}>
   <Image
