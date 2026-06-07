@@ -11,31 +11,6 @@ export async function getNavigation(): Promise<TNavigationItem[]> {
           href: '/',
           name: 'Home demo 1',
         },
-        {
-          id: '1-1',
-          href: '/home-2',
-          name: 'Home demo 2',
-        },
-        {
-          id: '1-2',
-          href: '/home-3',
-          name: 'Home demo 3 ',
-        },
-        {
-          id: '1-3',
-          href: '/home-4',
-          name: 'Home demo 4 ',
-        },
-        {
-          id: '1-4',
-          href: '/home-5',
-          name: 'Home demo 5',
-        },
-        {
-          id: '1-5',
-          href: '/home-3',
-          name: 'Header style 2',
-        },
       ],
     },
     {
