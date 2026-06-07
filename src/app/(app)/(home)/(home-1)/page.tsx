@@ -37,7 +37,7 @@ const Page = async () => {
     <div className="relative pb-28 lg:pb-32">
       <div className="relative container space-y-28 lg:space-y-32">
         <SectionLargeSlider
-          heading="Editor's pick"
+          heading="Matcheribalunews"
           subHeading="The most outstanding articles"
           className="pt-10 lg:pt-20"
           posts={audioPosts.slice(3, 8)}
