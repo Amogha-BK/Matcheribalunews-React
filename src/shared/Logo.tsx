@@ -15,7 +15,7 @@ const Logo: React.FC<Props> = ({ className, size = 'size-12 sm:size-14', ...prop
     src="/images/Logo.png"
     alt="Logo"
     width={700}
-    height={300}
+    height={500}
     priority
     className="h-auto w-auto"
   />
